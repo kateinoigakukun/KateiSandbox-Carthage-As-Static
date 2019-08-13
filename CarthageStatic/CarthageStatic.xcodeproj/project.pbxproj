@@ -1,0 +1,158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F22465102302B876001E6803 /* CarthagePackage */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F22465132302B876001E6803 /* Build configuration list for PBXAggregateTarget "CarthagePackage" */;
+			buildPhases = (
+				F22465142302B8AE001E6803 /* Build Library */,
+			);
+			dependencies = (
+			);
+			name = CarthagePackage;
+			productName = CarthagePackage;
+			productReference = F2A701602302A85B00F850A5 /* CarthagePackage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		F2A701602302A85B00F850A5 /* CarthagePackage.framework */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = CarthagePackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F22465062302B821001E6803 = {
+			isa = PBXGroup;
+			children = (
+				F22465152302B908001E6803 /* CarthagePackage */,
+			);
+			sourceTree = "<group>";
+		};
+		F22465152302B908001E6803 /* CarthagePackage */ = {
+			isa = PBXGroup;
+			children = (
+				F22465162302B916001E6803 /* Products */,
+			);
+			path = CarthagePackage;
+			sourceTree = "<group>";
+		};
+		F22465162302B916001E6803 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2A701602302A85B00F850A5 /* CarthagePackage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F22465072302B821001E6803 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					F22465102302B876001E6803 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F224650A2302B821001E6803 /* Build configuration list for PBXProject "CarthageStatic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F22465062302B821001E6803;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22465102302B876001E6803 /* CarthagePackage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F22465142302B8AE001E6803 /* Build Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $PROJECT_DIR/CarthagePackage\n$PROJECT_DIR/build-static-library.sh $PROJECT_DIR/../CarthagePackage/CarthagePackage.xcodeproj CarthagePackage $PROJECT_DIR/Configs/CarthagePackage.xcconfig\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F224650B2302B821001E6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F224650C2302B821001E6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		F22465112302B876001E6803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		F22465122302B876001E6803 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F224650A2302B821001E6803 /* Build configuration list for PBXProject "CarthageStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F224650B2302B821001E6803 /* Debug */,
+				F224650C2302B821001E6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22465132302B876001E6803 /* Build configuration list for PBXAggregateTarget "CarthagePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22465112302B876001E6803 /* Debug */,
+				F22465122302B876001E6803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F22465072302B821001E6803 /* Project object */;
+}
