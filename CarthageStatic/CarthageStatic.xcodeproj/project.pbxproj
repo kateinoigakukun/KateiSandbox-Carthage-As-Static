@@ -7,23 +7,36 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		C41C2BF02302EC6700E40A2B /* CarthagePackage */ = {
+		C41C2BF02302EC6700E40A2B /* APIKit-Static */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C41C2BF12302EC6700E40A2B /* Build configuration list for PBXAggregateTarget "CarthagePackage" */;
+			buildConfigurationList = C41C2BF12302EC6700E40A2B /* Build configuration list for PBXAggregateTarget "APIKit-Static" */;
 			buildPhases = (
 				C41C2BF42302EC6C00E40A2B /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = CarthagePackage;
+			name = "APIKit-Static";
 			productName = CarthagePackage;
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXFileReference section */
+		C41C2BFA2302F0A000E40A2B /* APIKit.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = APIKit.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
+		C41C2BF92302F0A000E40A2B /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				C41C2BFA2302F0A000E40A2B /* APIKit.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		F22465062302B821001E6803 = {
 			isa = PBXGroup;
 			children = (
+				C41C2BF92302F0A000E40A2B /* Configs */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,7 +64,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C41C2BF02302EC6700E40A2B /* CarthagePackage */,
+				C41C2BF02302EC6700E40A2B /* APIKit-Static */,
 			);
 		};
 /* End PBXProject section */
@@ -72,7 +85,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd $PROJECT_DIR/CarthagePackage\n$PROJECT_DIR/build-static-library.sh $PROJECT_DIR/../CarthagePackage/CarthagePackage.xcodeproj CarthagePackage $PROJECT_DIR/Configs/CarthagePackage.xcconfig\n\n";
+			shellScript = "PACKAGE_DIR=$PROJECT_DIR/../Carthage/Checkouts/APIKit\n\ncd $PACKAGE_DIR\n$PROJECT_DIR/build-static-library.sh $PACKAGE_DIR/APIKit.xcodeproj APIKit $PROJECT_DIR/Configs/APIKit.xcconfig\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -82,7 +95,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -91,7 +103,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -110,7 +121,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C41C2BF12302EC6700E40A2B /* Build configuration list for PBXAggregateTarget "CarthagePackage" */ = {
+		C41C2BF12302EC6700E40A2B /* Build configuration list for PBXAggregateTarget "APIKit-Static" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C41C2BF22302EC6700E40A2B /* Debug */,

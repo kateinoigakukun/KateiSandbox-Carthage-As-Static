@@ -5,6 +5,6 @@
       location = "group:KateiSandbox.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CarthagePackage/CarthagePackage.xcodeproj">
+      location = "group:Carthage/Checkouts/APIKit/APIKit.xcodeproj">
    </FileRef>
 </Workspace>

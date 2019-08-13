@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import CarthagePackage
+import APIKit
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
-        print(Hello.version)
+        print(APIKitVersionNumber)
     }
 }
