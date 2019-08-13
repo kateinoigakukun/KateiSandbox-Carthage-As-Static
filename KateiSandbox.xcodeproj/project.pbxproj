@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F22465192302BD19001E6803 /* CarthagePackage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22465182302BD19001E6803 /* CarthagePackage.framework */; };
 		F29DF0B2225F3A7100E793E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DF0B1225F3A7100E793E3 /* AppDelegate.swift */; };
 		F29DF0B4225F3A7100E793E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29DF0B3225F3A7100E793E3 /* ViewController.swift */; };
 		F29DF0B7225F3A7100E793E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29DF0B5225F3A7100E793E3 /* Main.storyboard */; };
@@ -16,18 +15,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F224651E2302BDB8001E6803 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F2A701602302A85B00F850A5;
-			remoteInfo = CarthagePackage;
-		};
-		F22465202302BDC2001E6803 /* PBXContainerItemProxy */ = {
+		C41C2BF52302EE6E00E40A2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F22465102302B876001E6803;
+			remoteGlobalIDString = C41C2BF02302EC6700E40A2B;
 			remoteInfo = CarthagePackage;
 		};
 /* End PBXContainerItemProxy section */
@@ -46,7 +38,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F22465182302BD19001E6803 /* CarthagePackage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CarthagePackage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CarthageStatic.xcodeproj; path = CarthageStatic/CarthageStatic.xcodeproj; sourceTree = "<group>"; };
 		F29DF0AE225F3A7100E793E3 /* KateiSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KateiSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29DF0B1225F3A7100E793E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F22465192302BD19001E6803 /* CarthagePackage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +62,6 @@
 		F224651B2302BDB7001E6803 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F224651F2302BDB8001E6803 /* CarthagePackage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +72,6 @@
 				F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */,
 				F29DF0B0225F3A7100E793E3 /* KateiSandbox */,
 				F29DF0AF225F3A7100E793E3 /* Products */,
-				F2A7018E2302B2C000F850A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,14 +96,6 @@
 			path = KateiSandbox;
 			sourceTree = "<group>";
 		};
-		F2A7018E2302B2C000F850A5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F22465182302BD19001E6803 /* CarthagePackage.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,7 +111,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F22465212302BDC2001E6803 /* PBXTargetDependency */,
+				C41C2BF62302EE6E00E40A2B /* PBXTargetDependency */,
 			);
 			name = KateiSandbox;
 			productName = KateiSandbox;
@@ -177,16 +157,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		F224651F2302BDB8001E6803 /* CarthagePackage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CarthagePackage.framework;
-			remoteRef = F224651E2302BDB8001E6803 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		F29DF0AC225F3A7100E793E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -213,10 +183,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F22465212302BDC2001E6803 /* PBXTargetDependency */ = {
+		C41C2BF62302EE6E00E40A2B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CarthagePackage;
-			targetProxy = F22465202302BDC2001E6803 /* PBXContainerItemProxy */;
+			targetProxy = C41C2BF52302EE6E00E40A2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

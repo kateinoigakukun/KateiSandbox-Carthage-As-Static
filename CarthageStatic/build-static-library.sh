@@ -4,7 +4,6 @@ build_static_lib() {
   local PROJECT=$1
   local TARGET=$2
   local OVERRIDE_CONFIG=$3
-  local =$1
   xcodebuild \
     -project ${PROJECT} \
     -target ${TARGET} \
@@ -13,6 +12,7 @@ build_static_lib() {
     -sdk ${PLATFORM_NAME} \
     BUILD_DIR="${BUILD_DIR}" \
     TARGET_BUILD_DIR="${TARGET_BUILD_DIR}" \
+    ARCHS="${ARCHS}" \
     build
 }
 
