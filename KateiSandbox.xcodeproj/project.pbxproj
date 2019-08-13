@@ -17,6 +17,16 @@
 		F29DF0BC225F3A7200E793E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29DF0BA225F3A7200E793E3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C45FE3912302F68900782546 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C41C2BF02302EC6700E40A2B;
+			remoteInfo = "APIKit-Static";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F2A701832302A8A700F850A5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -65,6 +75,13 @@
 			path = Configs;
 			sourceTree = "<group>";
 		};
+		C45FE38E2302F68300782546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F29DF0A5225F3A7100E793E3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C45FE3922302F68900782546 /* PBXTargetDependency */,
 			);
 			name = KateiSandbox;
 			productName = KateiSandbox;
@@ -143,6 +161,12 @@
 			mainGroup = F29DF0A5225F3A7100E793E3;
 			productRefGroup = F29DF0AF225F3A7100E793E3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C45FE38E2302F68300782546 /* Products */;
+					ProjectRef = F224651A2302BDB7001E6803 /* CarthageStatic.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F29DF0AD225F3A7100E793E3 /* KateiSandbox */,
@@ -177,6 +201,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C45FE3922302F68900782546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "APIKit-Static";
+			targetProxy = C45FE3912302F68900782546 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F29DF0B5225F3A7100E793E3 /* Main.storyboard */ = {
