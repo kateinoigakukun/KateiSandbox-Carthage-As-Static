@@ -22,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		C41C2BFA2302F0A000E40A2B /* APIKit.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = APIKit.xcconfig; sourceTree = "<group>"; };
+		C41C2BFD2302F23D00E40A2B /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		C41C2BFE2302F23D00E40A2B /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -29,6 +31,8 @@
 			isa = PBXGroup;
 			children = (
 				C41C2BFA2302F0A000E40A2B /* APIKit.xcconfig */,
+				C41C2BFE2302F23D00E40A2B /* Debug.xcconfig */,
+				C41C2BFD2302F23D00E40A2B /* Release.xcconfig */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -108,12 +112,14 @@
 		};
 		F224650B2302B821001E6803 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41C2BFE2302F23D00E40A2B /* Debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		F224650C2302B821001E6803 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41C2BFD2302F23D00E40A2B /* Release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
